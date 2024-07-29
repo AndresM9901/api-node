@@ -46,7 +46,7 @@ app.post('/productos', async (req, res) => {
 	}
 });
 
-app.put('productos/:ref', async (req, res) => {
+app.put('/productos/:ref', async (req, res) => {
 	const productoEditado = {
 		referencia: req.params.ref,
 		nombre: req.body.nombre,
